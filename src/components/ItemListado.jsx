@@ -16,7 +16,7 @@ const ItemListado = ({endPoint}) => {
 
     return (
         <>
-            <h2>Lista de usuario</h2>
+            <h2>Lista de {endPoint === 'users' ? 'Usuarios' : 'Comentarios'}</h2>
             <ul>
                 {items.map((item) => <li key={item.id}>{item.name}</li>)}
             </ul>
